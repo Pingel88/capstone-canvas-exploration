@@ -25,10 +25,8 @@ let points = [];
 let timer;
 
 function plotPoints() {
-  // let x = canvas.width / 2;
-  // let y = canvas.height / 2;
-  let x = innerWidth;
-  let y = 0;
+  let x = canvas.width / 2;
+  let y = canvas.height / 2;
 
   let counter = 0;
   setInterval(() => {
@@ -37,7 +35,7 @@ function plotPoints() {
     x = (points[counter].x + userPoints[userPointsSelector].x) * .5;
     y = (points[counter].y + userPoints[userPointsSelector].y) * .5;
     counter++
-  }, .1);
+  }, 0.1);
 }
 
 let animationId
